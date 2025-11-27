@@ -1,14 +1,31 @@
-/*
-==================================================
-PROBLEMA 1
-==================================================
-
-*/
-
 #include <stdio.h>
-#include <stdlib.h>
+#include <conio.h>
 
-int main() {
+void main()
+{
+    int numA, numB, numC;
     
-    return 0;
+    printf("Informe 3 numeros: ");
+    scanf("%d%d%d", &numA, &numB, &numC);
+    
+    int meio;
+    
+    if ((numB > numA && numB < numC) || (numB < numA && numB > numC))
+    {
+        meio = numB;
+    }
+    
+    else if ((numC > numA && numC < numB) || (numC < numA && numC > numB))
+    {
+        meio = numC;
+    }
+    
+    else
+    {
+        meio = numA;
+    }
+    
+    printf("O numero do meio eh: %d", meio);
+    
+    getch();
 }

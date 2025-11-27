@@ -1,14 +1,22 @@
-/*
-==================================================
-PROBLEMA 3
-==================================================
-
-*/
-
 #include <stdio.h>
-#include <stdlib.h>
+#include <conio.h>
 
-int main() {
+void main()
+{
+    int x, y;
     
-    return 0;
+    printf("Informe os numeros X e Y: ");
+    scanf("%d %d", &x, &y);
+    
+    if (y == (2*x)+1)
+    {
+        printf("Pertence a reta y=2x+1");
+    }
+    
+    else
+    {
+        printf("Nao pertence a reta y=2x+1");
+    }
+
+    getch();
 }
