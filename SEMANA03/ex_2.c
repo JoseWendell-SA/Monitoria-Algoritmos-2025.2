@@ -11,17 +11,17 @@ Escreva um programa que leia o nÃºmero de gols marcados pelo time da casa e o nÃ
 void main() {
     int gols_casa, gols_visitante;
 
-    printf("Informe o total de gols feitos pelo time da casa: ");
+    printf("Informe a quantidade de gols do time da casa: ");
     scanf("%d", &gols_casa);
 
-    printf("Informe o total de gols feitos pelo time visitante: ");
+    printf("Informe a quantidade de gols do time visitante: ");
     scanf("%d", &gols_visitante);
 
     if (gols_casa > gols_visitante) {
-        printf("O time da casa ganhou o jogo por %d x %d!", gols_casa, gols_visitante);
+        printf("O time da casa ganhou por %d x %d", gols_casa, gols_visitante);
     } else if (gols_visitante > gols_casa) {
-        printf("O time visitante ganhou o jogo por %d x %d!", gols_casa, gols_visitante);
+        printf("O time visitante ganhou por %d x %d", gols_casa, gols_visitante);
     } else {
-        printf("O jogo empatou por %d x %d!", gols_casa, gols_visitante);
+        printf("A partida empatou por %d x %d", gols_casa, gols_visitante);
     }
 }

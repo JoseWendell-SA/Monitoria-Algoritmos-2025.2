@@ -11,11 +11,9 @@ PROBLEMA {numero}
 */
 
 #include <stdio.h>
-#include <stdlib.h>
 
-int main() {{
+void main() {{
     
-    return 0;
 }}
 '''
 

@@ -9,18 +9,22 @@ abasteça com gasolina. Caso contrário, abasteça com álcool.” Com base nest
 #include <stdio.h>
 #include <stdlib.h>
 
+const float FATOR = 0.7;
+
 void main() {
     float preco_gasolina, preco_alcool;
 
-    printf("Preco da gasolina: ");
+    printf("Informe o preco da gasolina: ");
     scanf("%f", &preco_gasolina);
 
-    printf("Preco do alcool: ");
+    printf("Informe o preco do alcool: ");
     scanf("%f", &preco_alcool);
 
-    if (preco_gasolina * 0.7 <= preco_alcool) {
-        printf("Abasteca com GASOLINA\n");
+    preco_gasolina *= FATOR;
+
+    if (preco_gasolina < preco_alcool) {
+        printf("Abasteca com gasolina!");
     } else {
-        printf("Abasteca com ALCOOL\n");
+        printf("Abasteca com alcool!");
     }
 }
